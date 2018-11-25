@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Cormorant+Upright');
+
+.maindiv {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  
+  font-family: Montserrat;
+
+  display: grid;
+  grid-template-columns: 230px 370px auto 50px;
+  grid-template-rows: 650px 215px auto;
+  grid-template-areas: 
+  "aboutme       skills        academicworkhistory footer"
+  "whatsyourname       whatilove     whatilove footer"
+  "projects projects      projects            projects";
+}
+
+#resumeTitle {
+  padding: 50px; 
+  margin: 0;
+  /* background: #eb01a5; */
+  font-family: Cormorant Upright;
+  font-size: 60px;
+  font-weight: 600;
+}
+p {
+  margin: 0px;
+}
+img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* ABOUTME */
+.aboutme {
+  grid-area: aboutme;
+  background: rgb(255,234,0);
+  padding: 10px;
+}
+/* SKILLS */
+.skills {
+  grid-area: skills;
+  background: rgb(8,147,194);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.skills p {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.skills hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 150px;
+}
+.skills .skillsIcons {
+  border: 5px white solid;
+  border-radius: 3px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* WHATSYOURNAME */
+.whatsyourname {
+  grid-area: whatsyourname;
+  background: rgb(245,191,12);
+  overflow: hidden;
+}
+.whatsyourname h4 {
+  text-align: center;
+}
+.whatsyourname input {
+  margin-left: 10px;
+  height: 30px;
+  width: 170px;
+  border: none;
+  border-right: solid black 2px;
+
+  /* font-family: Montserrat; */
+  font-size: 18px;
+  outline: none;
+}
+.whatsyourname button {
+  height: 32px;
+  background: white;
+  border: none;
+
+  font-weight: bold;
+  font-size: 18px;
+  outline: none;
+}
+.whatsyourname button:hover {
+  cursor: pointer;
+}
+.greeting {
+  font-weight: bold;
+}
+.greetingshowing {
+  transform: translatey(-200px);
+  transition: 1s;
+  padding: 10px;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+/* PROJECTS */
+.projects {
+  grid-area: projects;
+  display: flex;
+  flex-wrap: wrap;
+}
+.projectComponent {
+  background: grey;
+  border: solid yellowgreen 1px;
+  flex-basis: 300px;
+  flex-grow: 1;
+  text-align: center;
+  padding: 10px;
+
+  position: relative;
+}
+.projectComponent img {
+  /* display: block;
+  margin: auto; */
+}
+.projectComponent h3{
+  color: rgb(191, 255, 64);
+}
+.projectComponent p{
+  border: solid yellowgreen 1px;
+  color: white;
+}
+.projects a {
+  color: rgb(13, 255, 13);
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  opacity: 0;
+  font-size: 50px;
+}
+.projectComponent:hover > img{
+  opacity: .1;
+  transition: 1s;
+  filter: grayscale(80%);
+}
+.projectComponent:hover > h3{
+  opacity: .1;
+  transition: 1s;
+}
+.projectComponent:hover a{
+  opacity: 1;
+  transition: 1s;
+}
+
+/* WHAT I LOVE */
+.whatilove {
+  grid-area: whatilove;
+  background: rgb(237,28,36);
+  font-weight: bold;
+  padding: 20px;
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.whatilove p{
+}
+
+/* ACADEMIC HISTORY */
+.academicworkhistory {
+  grid-area: academicworkhistory;
+  background: rgb(195,195,195);
+  padding: 20px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.academicworkhistory h3 {
+  margin-top: 10px;
+}
+.academicworkhistory a {
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+  right: 10%;
+  text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+  grid-area: footer;
+  background: rgb(12,245,86);
+  text-align: center;
+}
+
+
+@media all and (max-width: 1320px) {
+  .maindiv {
+    width: 95%;
+
+    display: grid;
+    grid-template-columns: 230px 370px auto 50px;
+    grid-template-rows: 600px auto 200px 230px;
+    grid-template-areas: 
+    "aboutme       academicworkhistory        academicworkhistory footer"
+    "skills       skills     skills skills"
+    "whatsyourname       whatilove     whatilove whatilove"
+    "projects projects      projects        projects    ";
+  }
+}
+@media all and (max-width: 900px) {
+  .maindiv {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .whatsyourname {
+    padding-bottom: 20px;
+    max-height: 110px;
+  }
+  #resumeTitle {
+    background: #eb01a5;
+  }
+}
+@media all and (min-width: 2000px) {
+  .maindiv {
+    width: 85%;
+    height: 1100px;
+
+    display: grid;
+    grid-template-columns: 400px 550px 15% auto;
+    grid-template-rows: 400px 150px 350px 200px;
+    grid-template-areas: 
+    "aboutme       skills  skills      projects"
+    "aboutme  academicworkhistory academicworkhistory  projects"
+    "whatsyourname  academicworkhistory academicworkhistory  projects"
+    "footer  whatilove     whatilove     projects ";
+  }
+}
