@@ -15,7 +15,7 @@ const AcademicWorkHistory = () => {
       <p>Finished my High Shool education in 2012.</p>
       <br/>
       <p>Went to college for 2 years during 2013-2014 and ended up dropping out (Civil Engineering).</p>
-      <a href='./imgs/Curriculum.pdf' download>Download Resume</a>
+      <a href='./imgs/Curriculum, Alex Howez.pdf' download>Download Resume</a>
     </div>
   )
 }
