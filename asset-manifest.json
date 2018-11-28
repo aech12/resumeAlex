@@ -1,7 +1,7 @@
 {
-  "main.css": "/resumeAlex/static/css/main.2515e17a.chunk.css",
-  "main.js": "/resumeAlex/static/js/main.2a394d72.chunk.js",
-  "main.js.map": "/resumeAlex/static/js/main.2a394d72.chunk.js.map",
+  "main.css": "/resumeAlex/static/css/main.899f5e04.chunk.css",
+  "main.js": "/resumeAlex/static/js/main.a77e1a74.chunk.js",
+  "main.js.map": "/resumeAlex/static/js/main.a77e1a74.chunk.js.map",
   "static/js/1.492f714a.chunk.js": "/resumeAlex/static/js/1.492f714a.chunk.js",
   "static/js/1.492f714a.chunk.js.map": "/resumeAlex/static/js/1.492f714a.chunk.js.map",
   "runtime~main.js": "/resumeAlex/static/js/runtime~main.6aecbc09.js",
@@ -12,8 +12,8 @@
   "static/media/4.png": "/resumeAlex/static/media/4.62b590ca.png",
   "static/media/5.png": "/resumeAlex/static/media/5.cb3418c6.png",
   "static/media/1.png": "/resumeAlex/static/media/1.b1d2e965.png",
-  "static/css/main.2515e17a.chunk.css.map": "/resumeAlex/static/css/main.2515e17a.chunk.css.map",
+  "static/css/main.899f5e04.chunk.css.map": "/resumeAlex/static/css/main.899f5e04.chunk.css.map",
   "index.html": "/resumeAlex/index.html",
-  "precache-manifest.cba3392e2329f4d2893f967100b7f13f.js": "/resumeAlex/precache-manifest.cba3392e2329f4d2893f967100b7f13f.js",
+  "precache-manifest.f862780f060d15ec686634f0bab32348.js": "/resumeAlex/precache-manifest.f862780f060d15ec686634f0bab32348.js",
   "service-worker.js": "/resumeAlex/service-worker.js"
 }
